@@ -14,7 +14,7 @@ chown root:root /root/.ssh/authorized_keys
 echo "127.0.1.1 $(hostname)" >> /etc/hosts
 
 # Add kubemaster1 in  /etc/hosts
-echo "10.0.0.11  kubemaster1" >> /etc/hosts
+echo "192.168.201.11  kubemaster1" >> /etc/hosts
 
 # Get current IP adress to launch k3S
 current_ip=$(/sbin/ip -o -4 addr list enp0s8 | awk '{print $4}' | cut -d/ -f1)

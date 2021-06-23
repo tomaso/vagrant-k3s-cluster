@@ -3,7 +3,7 @@
     address = ":6443"
     [entryPoints.websecure.http.tls]
       [[entryPoints.websecure.http.tls.domains]]
-        main = "10.0.0.30"
+        main = "192.168.201.30"
 
 [providers.file]
   directory = "/tmp/traefikconf/"

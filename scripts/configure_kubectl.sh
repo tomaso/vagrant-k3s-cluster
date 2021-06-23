@@ -12,7 +12,7 @@ cat << EOF > /tmp/kubectlvagrantconfig.yml
 apiVersion: v1
 clusters:
 - cluster:
-    server: https://10.0.0.30:6443
+    server: https://192.168.201.30:6443
     insecure-skip-tls-verify: true
   name: default
 contexts:
